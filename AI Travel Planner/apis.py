@@ -24,7 +24,7 @@ app.add_middleware(
 #     api_key=os.getenv("OPENAI_API_KEY")
 # )
 
-client = genai.Client(api_key="AQ.Ab8RN6LRM7Q-JcCQ1GlY_Qa3s0HBXB1fThchuDZVpHanM4t-kA")
+client = genai.Client(api_key="")
 
 
 @app.post("/trip-plan")

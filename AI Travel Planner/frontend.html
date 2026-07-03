@@ -1,0 +1,187 @@
+<!-- <form id="userInputForm">
+  <label for="destination">Destination:</label>
+  <input type="text" id="destination" name="destination" placeholder="Enter your Destination" required>
+
+  <label for="days">Days:</label>
+  <input type="text" id="days" name="days" required>
+
+
+  <input type="submit" value="Submit">
+</form>
+
+<p id="responseMessage"></p>
+
+<script src="connect.js"></script>
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Travel Planner</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #2563eb;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background: #1d4ed8;
+        }
+
+        #responseMessage {
+            margin-top: 25px;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+
+        .emoji {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <div class="emoji">✈️</div>
+
+        <h1>AI Travel Planner</h1>
+
+        <form id="userInputForm">
+            <label for="origin">Your starting point</label>
+            <input
+                type="text"
+                id="origin"
+                name="origin"
+                placeholder="e.g. Delhi, Banglore"
+                required
+            >
+
+            <label for="destination">Destination</label>
+            <input
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="e.g. Chopta, Goa, Manali"
+                required
+            >
+
+            <label for="days">Number of Days</label>
+            <input
+                type="text"
+                id="days"
+                name="days"
+                placeholder="e.g. 3"
+                required
+            >
+            <label for="dates">Month & Year</label>
+            <input
+                type="text"
+                id="dates"
+                name="dates"
+                placeholder="e.g. May 2026"
+                required
+            >
+
+            <label for="people">Number of People</label>
+            <input
+                type="text"
+                id="people"
+                name="people"
+                placeholder="e.g. 3"
+                required
+            >
+
+            <label for="budget">Budget</label>
+            <input
+                type="text"
+                id="budget"
+                name="budget"
+                placeholder="e.g. 10k INR"
+                required
+            >
+
+            <label for="vibe">Vibe</label>
+            <input
+                type="text"
+                id="vibe"
+                name="vibe"
+                placeholder="e.g. nature, relaxing"
+                required
+            >
+
+            <input type="submit" value="Generate Itinerary">
+
+        </form>
+
+    </div>
+
+    <div id="responseMessage">
+        Your itinerary will appear here...
+    </div>
+
+</div>
+
+<script src="connect.js"></script>
+
+</body>
+</html>

@@ -44,6 +44,3 @@ def getData(data: dict):
         "message": response.text
     }
 
-
-
-# openai key:  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
